@@ -12,7 +12,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-4 col-md-4 text-center">
-                <a href="index.html"><img src="assets/images/logo.png" alt="logo.png" width="65%"></a>
+                <a href="index.php"><img src="assets/images/logo.png" alt="logo.png" width="65%"></a>
               </div>
               <div class="col-lg-8 col-md-8">
                 <div class="header-banner">

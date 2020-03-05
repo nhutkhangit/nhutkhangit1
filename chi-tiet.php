@@ -5,7 +5,6 @@
     <!-- Facebook SDK -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
-
     <div id="wrapper">
       <header class="header">
         <div class="top-header sm-hidden py-4">

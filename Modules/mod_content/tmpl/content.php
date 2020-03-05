@@ -1,5 +1,5 @@
 <content class="content">
-  <!-- <div><?php var_dump($result); ?></div> -->
+  <div><?php var_dump($result); ?></div>
   <div class="container">
     <div class="row">
       <?php

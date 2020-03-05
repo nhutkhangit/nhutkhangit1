@@ -19,9 +19,9 @@
                   </div>
                   <!-- info sm -->
                   <div class="summary-article">
-                    <p><img src="assets/images/skill.jpg" alt="skill.jpg" class="w-100" /></p>
-                    <p><img src="assets/images/ngoc-trangbi.jpg" alt="ngoc.jpg" class="w-100" /></p>
-                    <p><img src="assets/images/trangbi.jpg" alt="trang bi.jpg" class="w-100" /></p>
+                    <p><img src="assets/images/skill1.jpg" alt="skill.jpg" class="w-100" /></p>
+                    <p><img src="assets/images/ngoc-trangbi1.jpg" alt="ngoc.jpg" class="w-100" /></p>
+                    <p><img src="assets/images/trangbi1.jpg" alt="trang bi.jpg" class="w-100" /></p>
                     <p>
                     Một số lưu ý khi chơi Taara:
                     Mặc dù sở hữu lượng máu lớn, giáp trâu cùng bộ kĩ năng áp sát tuyệt vời song điều đó cũng không là gì nếu đối phương có nhiều kĩ năng hỗ trợ hoặc lắm tướng đỡ đòn.

@@ -7,7 +7,7 @@
           ?>
           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
               <div class="detail-section">
-                <img src="assets/images/taara.jpg" alt="tarra.jpg" class="w-100" />
+                <img src="assets/images/taara.jpg" alt="Tarra.jpg" class="w-100" />
                 <div class="content-article">
                   <h2>HƯỚNG DẪN CƠ BẢN TƯỚNG TAARA - BÚA CUỒNG BẠO</h2>
                   <div class="info-sm">

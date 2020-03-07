@@ -4,11 +4,11 @@
  */
 include_once("config/config.php");
 
-class content extends Database_connect {
-	public function content_load_db()
+class chuyenmuc extends Database_connect {
+	function load_danhmuc()
 	{
 		// $result = array();
-		$sql = "SELECT * from nk_baiviet where status = 1 order by ID ASC";
+		$sql = "SELECT * from nk_danhmuc where status = 1  order by ID ASC";
 
 		$this->execute($sql);
 		if($this->num_rows()==0){
@@ -23,27 +23,10 @@ class content extends Database_connect {
 		return $data;
 	}
 
-	public function content_load_chitiet($id)
+	function load_baivietmoi()
 	{
 		// $result = array();
-		$sql = "SELECT * from nk_baiviet where status = 1  and id = '$id' order by ID ASC";
-
-		$this->execute($sql);
-		if($this->num_rows()==0){
-			$data=0;
-		}
-		else {
-			while ($datas=$this->getData()){
-				$data[]=$datas;
-			}
-		}
-		
-		return $data;
-	}
-	public function baiviet_noibat()
-	{
-		// $result = array();
-		$sql = "SELECT * from nk_baiviet where status = 1 order by ID ASC";
+		$sql = "SELECT * FROM `nk_baiviet` WHERE STATUS = 1 ORDER BY id DESC LIMIT 3";
 
 		$this->execute($sql);
 		if($this->num_rows()==0){
@@ -58,10 +41,22 @@ class content extends Database_connect {
 		return $data;
 	}
 
-	public function update_view($id, $count_view)
+	function load_baivietxemnhieu()
 	{
-		$sql = "UPDATE nk_baiviet SET count_view = '$count_view' WHERE id = '$id';";
-		$update = $this->execute($sql);
+		// $result = array();
+		$sql = "SELECT * FROM `nk_baiviet` WHERE STATUS = 1 ORDER BY count_view DESC LIMIT 5";
+
+		$this->execute($sql);
+		if($this->num_rows()==0){
+			$data=0;
+		}
+		else {
+			while ($datas=$this->getData()){
+				$data[]=$datas;
+			}
+		}
+		
+		return $data;
 	}
 }
 ?>

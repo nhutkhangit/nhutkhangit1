@@ -23,7 +23,7 @@
             <ul class="menu-footer">
               <li><a href="#" target="_blank">Nickname: Kendy Lien</a></li>
               <li><a href="mailto:nhutkhangit@gmail.com">Email: nhutkhangit@gmail.com</a></li>
-              <li><a href="callme:0396231322">SĐT: 0817233044</a></li>
+              <li><a href="callme:0817233044">SĐT: 0817233044</a></li>
             </ul>
           </div>
         </div>

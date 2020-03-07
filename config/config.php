@@ -4,10 +4,15 @@
  */
 class Database_connect
 {
-	private $hostname='nhutkhangit-db.c1luaigmpfqw.ap-southeast-1.rds.amazonaws.com';
-	private $username='admin';
-	private $pass='nhutkhangitxyz';
-	private $dbname='nhutkhangit-db';
+	// private $hostname='nhutkhangitxyz.c1luaigmpfqw.ap-southeast-1.rds.amazonaws.com';
+	// private $username='root';
+	// private $pass='nhutkhangitxyz';
+	// private $dbname='nhutkhangitxyz_db';
+
+	private $hostname='127.0.0.1';
+	private $username='root';
+	private $pass='';
+	private $dbname='nhutkhangitxyz_db';
 
 	private $conn = NULL;
 	private $result = NULL;

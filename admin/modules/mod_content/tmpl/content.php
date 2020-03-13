@@ -1,6 +1,8 @@
-<?php if (isset($_GET['type']) && $_GET['type']=='logout'): ?>
-    <?php unset($_SESSION['login']);?><meta http-equiv="refresh" content="0;url=<?=sprintf("%s://%s%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http', $_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI'])?>" /><?php ?> 
-<?php endif; ?>
+<?php if (isset($_GET['type']) && $_GET['type']=='slider'): ?>
+    <?php include_once("modules/mod_slider/mod_slider.php"); ?>
+<?php else (isset($_GET['type']) && $_GET['type']=='qlcm'): ?>
+  <?php include_once("modules/mod_qlcm/mod_qlcm.php"); ?>
+<?php endif ;?>
 <div class="main-content">
     <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex" id="topbar">
         <div class="container-fluid">
@@ -541,10 +543,6 @@
 
         </div>
     </nav>
-    <?php if (isset($_GET['type']) && $_GET['type']=='slider'): ?>
-        <?php include_once("modules/mod_slider/mod_slider.php"); ?>
-    <?php else :?>
-        <?php include_once("default.php"); ?>
-    <?php endif; ?>
+    
 </div>
 <!-- / .main-content -->

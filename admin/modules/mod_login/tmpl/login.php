@@ -1,4 +1,4 @@
-<!-- <?php if (isset($_POST['login-admin'])) :?>
+<?php if (isset($_POST['login-admin'])) :?>
 	<?php if ($_POST['email-address']=='kendy@gmail.com' && $_POST['password']=='123'): ?>
   		<?php $_SESSION['login'] = 'kendy';?><meta http-equiv="refresh" content="0;url=<?=url();?>" /><?php ?>
   	<?php else: ?>
@@ -154,4 +154,4 @@
     <script src="./assets/js/theme.min.js"></script>
 
   </body>
-</html> -->
+</html>

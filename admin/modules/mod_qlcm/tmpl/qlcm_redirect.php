@@ -1,1 +1,0 @@
-<meta http-equiv="refresh" content="0;url=<?=sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http', $_SERVER['SERVER_NAME'].'/admin?type=qlcm')?>" />

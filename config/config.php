@@ -2,8 +2,7 @@
 /**
  * 
  */
-class Database_connect
-{
+class Database_connect {
 	private $hostname='nhutkhangitxyz.c1luaigmpfqw.ap-southeast-1.rds.amazonaws.com';
 	private $username='root';
 	private $pass='nhutkhangitxyz';

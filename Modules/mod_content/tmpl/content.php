@@ -112,7 +112,7 @@
                 <?php foreach ($result as $value) : ?>
                   <div class="row section-article">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 section-image-article"> 
-                      <a href="#"><img src="assets/images/Taara.jpg" alt="365x170.jpg" class="w-100"/></a> 
+                      <a href="#"><img src="uploads/images/post/<?=$value['hinhanh']?>" alt="365x170.jpg" class="w-100"/></a> 
                     </div> 
                     <div class="col-lg-8 col-md-8 col-sm-4 col-xs-12 detail-article">
                       <h2><a href="?bai-viet=<?=$value['idbv']?>"><?=$value['tieude']?></a></h2>

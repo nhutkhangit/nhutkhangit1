@@ -73,6 +73,14 @@ $mang = explode(',',$quyen);
     							<img src="images/1358024845_menu_16.png">
     							<a href="index.php?page=nguoidung">Quản lý Người dùng</a>
     						</li>
+    						<li>
+    							<img src="images/1358024845_menu_16.png">
+    							<a href="index.php?page=menu">Quản lý Menu</a>
+    						</li>
+    						<li>
+    							<img src="images/1358024845_menu_16.png">
+    							<a href="index.php?page=post">Quản lý Bài Viết</a>
+    						</li>
     					</ul>
     				</div>
     			<!-- </div> -->
@@ -97,6 +105,16 @@ $mang = explode(',',$quyen);
 						//Nguoi dung
 						case 'nguoidung':
 						include('modules/mod_nguoidung/mod_nguoidung.php');
+						break;
+
+						//Menu
+						case 'menu':
+						include('modules/mod_menu/mod_menu.php');
+						break;
+
+						//Menu
+						case 'post':
+						include('modules/mod_post/mod_post.php');
 						break;
 					}
 				}

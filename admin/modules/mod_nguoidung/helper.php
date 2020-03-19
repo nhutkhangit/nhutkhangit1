@@ -139,13 +139,5 @@ class nguoidung extends Database_connect{
 
 		return $data;
 	}
-
-	public function nk_count(){
-		$sql = "SELECT * from quanly";
-		$this->execute($sql);
-		$count = $this->num_rows();
-
-		return $count;
-	}
 }
 ?>

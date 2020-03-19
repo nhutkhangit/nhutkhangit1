@@ -23,65 +23,22 @@
           </div>
         </div>
         <!-- top header -->
-        <div class="menu-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 nav-sm-fuild">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">TRANG CHỦ<span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">GIỚI THIỆU</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">TIN TỨC</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">VIDEO LIVE STREAM</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">REVIEW</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">TRAILER</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">LIÊN HỆ</a>
-                      </li>
-                      <!--
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>
-                      -->
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php include_once("Modules/mod_menu/mod_menu.php"); ?>
         <!-- menu header -->
       </header>
       <!-- header -->
-      <?php 
+      <?php
+      if(isset($_GET['page'])){
+        $page  = $_GET['page'];
+        switch($page){
+          //Danh muc
+          case 'lienhe':
+          include('modules/mod_lienhe/mod_lienhe.php');
+          break;
+        }
+      }else {
         include_once("Modules/mod_content/mod_content.php"); 
+      }
       ?>
       <!-- content -->
       <?php include_once("Modules/mod_footer/mod_footer.php"); ?>

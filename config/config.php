@@ -53,5 +53,12 @@ class Database_connect {
 		}
 		return $data;
 	}
+
+	public function nk_count($sql){
+		$this->execute($sql);
+		$count = $this->num_rows();
+
+		return $count;
+	}
 }
 ?>

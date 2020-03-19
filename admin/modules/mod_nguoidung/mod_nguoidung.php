@@ -314,7 +314,7 @@
 				{
 					$limit =10;
 					$start =  findstart($limit);
-					$count = $nd->nk_count();
+					$count = $nd->nk_count("SELECT * from quanly");
 					$page = findpages($count,$limit);
 					$sql = "select * from quanly order by id DESC limit $start,$limit";
 					$mang = $nd->truyvan($sql);

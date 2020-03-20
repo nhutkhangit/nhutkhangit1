@@ -8,7 +8,7 @@
           <?php if (!empty($chitiet)) : ?>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="detail-section">
-                  <img src="uploads/images/post/<?=$chitiet[0]['hinhanh'];?>" alt="Tarra.jpg" class="w-100" />
+                  <img src="uploads/images/post/<?=$chitiet[0]['hinhanh'];?>" alt="<?=$chitiet[0]['hinhanh'];?>" class="w-100" />
                   <div class="content-article">
                     <h2><?=$chitiet[0]['tieude'];?></h2>
                     <div class="info-sm">

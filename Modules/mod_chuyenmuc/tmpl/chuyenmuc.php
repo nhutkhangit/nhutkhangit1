@@ -3,7 +3,7 @@
     <h2 class="title-right-box">Chuyên mục</h2>
     <ul class="category-right">
       <?php foreach ($result as $key => $value)  : ?>         
-          <li><a href=""><?=$value['name'];?></a>
+          <li><a href="?page=danhmuc&iddm=<?=$value['id'];?>"><?=$value['name'];?></a>
       <?php endforeach; ?>
     </ul>
   </div>

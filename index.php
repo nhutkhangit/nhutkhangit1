@@ -27,7 +27,40 @@
         <!-- menu header -->
       </header>
       <!-- header -->
-      <?php
+      <?php if(isset($_GET['page']) && $_GET['page']=='lienhe'): ?>
+        <?php include_once("modules/mod_lienhe/mod_lienhe.php"); ?> 
+        <?php else: ?>
+        <content class="content">
+          <div class="container">
+            <div class="row">
+              <!-- col-9 left -->
+              <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <?php 
+                  if(isset($_GET['page'])) {
+                    $page  = $_GET['page'];
+                    switch($page){
+                      //Details
+                      case 'chitiet':
+                      include_once("Modules/mod_chitiet/mod_chitiet.php");
+                      break;
+
+                      //Load Danh mục
+                      case 'danhmuc':
+                      include_once("Modules/mod_danhmuc/mod_danhmuc.php");
+                      break;
+                    }
+                  }else {
+                    include_once("Modules/mod_bvnoibat/mod_bvnoibat.php");
+                  }
+                ?>
+              </div>
+              <!-- col-3 right -->
+              <?php include_once("Modules/mod_chuyenmuc/mod_chuyenmuc.php") ?>
+            </div>
+          </div>
+        </content>
+      <?php endif; ?>
+      <?php 
       if(isset($_GET['page'])){
         $page  = $_GET['page'];
         switch($page){
@@ -37,7 +70,9 @@
           break;
         }
       }else {
-        include_once("Modules/mod_content/mod_content.php"); 
+        ?>
+          
+        <?php 
       }
       ?>
       <!-- content -->

@@ -30,6 +30,7 @@
 					else
 					{
 							move_uploaded_file($_FILES['file']['tmp_name'],'../uploads/images/post/'.$_FILES['file']['name']);
+							chmod(ABS_PATH . 'post', 0666);
 							$bv->hinhanh = $_FILES['file']['name'];
 							if($bv->them())
 							{

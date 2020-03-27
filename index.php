@@ -48,6 +48,11 @@
                       case 'danhmuc':
                       include_once("Modules/mod_danhmuc/mod_danhmuc.php");
                       break;
+
+                      //Load Video
+                      case 'video':
+                      include_once("Modules/mod_video/mod_video.php");
+                      break;
                     }
                   }else {
                     include_once("Modules/mod_bvnoibat/mod_bvnoibat.php");

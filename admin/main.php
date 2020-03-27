@@ -81,6 +81,10 @@ $mang = explode(',',$quyen);
     							<img src="images/1358024845_menu_16.png">
     							<a href="index.php?page=post">Quản lý Bài Viết</a>
     						</li>
+    						<li>
+    							<img src="images/1358024845_menu_16.png">
+    							<a href="index.php?page=video">Quản lý Video</a>
+    						</li>
     					</ul>
     				</div>
     			<!-- </div> -->
@@ -115,6 +119,11 @@ $mang = explode(',',$quyen);
 						//Menu
 						case 'post':
 						include('modules/mod_post/mod_post.php');
+						break;
+
+						//Video
+						case 'video':
+						include('modules/mod_video/mod_video.php');
 						break;
 					}
 				}

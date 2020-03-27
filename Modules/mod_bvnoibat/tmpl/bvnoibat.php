@@ -1,12 +1,12 @@
 <h1 class="title-blog">Bài viết nổi bật</h1>
 <div class="slider-blog">
   <div class="owl-slider owl-carousel owl-theme">
-    <?php foreach ($slide as $slider) :?>
+    <?php foreach ($bvnoibat as $bvnoibat) :?>
       <div class="item">
-        <a href="?page=chitiet&id=<?=$slider['idbv']?>"><img src="uploads/images/post/<?=$slider['hinhanh']?>" alt="slider-1.jpg" class="w-100"/></a>
-        <h2><a href="?page=chitiet&id=<?=$slider['idbv']?>"><?=$slider['tieude']?></a></h2>
-        <p class="date"><span>Ngày đăng: <?=$slider['ngaytao']?></span> <span>Lượt xem: <?=$slider['luotxem']?></span></p>
-        <p class="summary"><?=$slider['tomtat']?></p>
+        <a href="?page=chitiet&id=<?=$bvnoibat['idbv']?>"><img src="uploads/images/post/<?=$bvnoibat['hinhanh']?>" alt="<?=$bvnoibat['hinhanh']?>" class="w-100"/></a>
+        <h2><a href="?page=chitiet&id=<?=$bvnoibat['idbv']?>"><?=$bvnoibat['tieude']?></a></h2>
+        <p class="date"><span>Ngày đăng: <?=$bvnoibat['ngaytao']?></span> <span>Lượt xem: <?=$bvnoibat['luotxem']?></span></p>
+        <p class="summary"><?=$bvnoibat['tomtat']?></p>
       </div>
     <?php endforeach; ?>
       <!-- item -->
@@ -14,6 +14,7 @@
 </div>
 <!-- section 1 slider blog -->
 <div class="section-2 section-image">
+  <h1 class="title-blog">Bài viết xem nhiều</h1>
   <div class="row">
     <div class="col-md-4">
       <a href="#"><img src="assets/images/section-1.jpg" class="w-100"/></a>
@@ -41,8 +42,8 @@
 <!-- section 2 section image -->
 <div class="section-3">
   <h1 class="title-blog">Bài viết mới nhất</h1>
-  <?php if (!empty($result)): ?>
-    <?php foreach ($result as $value) : ?>
+  <?php if (!empty($bvmoinhat)): ?>
+    <?php foreach ($bvmoinhat as $value) : ?>
       <div class="row section-article">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 section-image-article"> 
           <a href="#"><img src="uploads/images/post/<?=$value['hinhanh']?>" alt="365x170.jpg" class="w-100"/></a> 
@@ -52,7 +53,7 @@
           <span>Ngày đăng: <?=$value['ngaytao'];?></span>
           <p><?=$value['tomtat']?></p>
         </div>
-      </div>
+      </div> 
     <?php endforeach; ?>
   <?php else: ?>
     <div>Không có bài viết mới nào !!</div>

@@ -1,0 +1,168 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.22
+* STEP-1 START @ 05:38:07
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	7.2.14 | SAPI: apache2handler
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache/2.4.37 (Win32) PHP/7.2.14
+DOC ROOT:	C:/wamp/www/nhutkhang/webbandienthoai
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://localhost/nhutkhang/webbandienthoai/installer.php
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20170906_demowebsitebandienthoaicua_0aa148c07a0ec02f1880171020013158_archive.zip
+SIZE:	17.24MB
+ZIP:	Enabled (ZipArchive Support)
+
+>>> START EXTRACTION:
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2391
+    [filename] => C:\wamp\www\nhutkhang\webbandienthoai\20170906_demowebsitebandienthoaicua_0aa148c07a0ec02f1880171020013158_archive.zip
+    [comment] => 
+)
+File timestamp is 'Current' mode: 2020-02-23 05:38:09
+<<< EXTRACTION COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.200223053809.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 05:38:09 - RUNTIME: 2.7554 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 05:39:26
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.24 -- Build Server: 10.1.25
+FILE SIZE:	database.sql (1.38MB) - installer-data.sql (1.38MB)
+TIMEOUT:	5000
+MAXPACK:	104857600
+SQLMODE:	STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+NEW SQL FILE:	[C:/wamp/www/nhutkhang/webbandienthoai/installer-data.sql]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	0
+QUERIES RAN:	4786
+
+wp_apmm_custom_theme: (2)
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (1)
+wp_links: (0)
+wp_options: (225)
+wp_postmeta: (4131)
+wp_posts: (271)
+wp_term_relationships: (57)
+wp_term_taxonomy: (15)
+wp_termmeta: (0)
+wp_terms: (15)
+wp_usermeta: (49)
+wp_users: (2)
+
+Removed '63' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 1.8129 sec.
+STEP-2 COMPLETE @ 05:39:28 - RUNTIME: 1.8574 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 05:40:14
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_apmm_custom_theme~ (2)
+wp_commentmeta^ (0)
+wp_comments~ (1)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (161)
+wp_postmeta~ (4131)
+wp_posts~ (271)
+wp_term_relationships~ (57)
+wp_term_taxonomy~ (15)
+wp_termmeta^ (0)
+wp_terms~ (15)
+wp_usermeta~ (49)
+wp_users~ (2)
+--------------------------------------
+Search1:	'/home/u851350878/public_html/demo/mobileshop' 
+Change1:	'C:/wamp/www/nhutkhang/webbandienthoai' 
+Search2:	'\/home\/u851350878\/public_html\/demo\/mobileshop' 
+Change2:	'C:\/wamp\/www\/nhutkhang\/webbandienthoai' 
+Search3:	'%2Fhome%2Fu851350878%2Fpublic_html%2Fdemo%2Fmobileshop%2F' 
+Change3:	'C%3A%2Fwamp%2Fwww%2Fnhutkhang%2Fwebbandienthoai%2F' 
+Search4:	'\home\u851350878\public_html\demo\mobileshop' 
+Change4:	'C:/wamp/www/nhutkhang/webbandienthoai' 
+Search5:	'http://giuseart.com/demo/mobileshop' 
+Change5:	'http://localhost/nhutkhang/webbandienthoai' 
+Search6:	'http:\/\/giuseart.com\/demo\/mobileshop' 
+Change6:	'http:\/\/localhost\/nhutkhang\/webbandienthoai' 
+Search7:	'http%3A%2F%2Fgiuseart.com%2Fdemo%2Fmobileshop' 
+Change7:	'http%3A%2F%2Flocalhost%2Fnhutkhang%2Fwebbandienthoai' 
+Search8:	'https://giuseart.com/demo/mobileshop' 
+Change8:	'https://localhost/nhutkhang/webbandienthoai' 
+Search9:	'https:\/\/giuseart.com\/demo\/mobileshop' 
+Change9:	'https:\/\/localhost\/nhutkhang\/webbandienthoai' 
+Search10:	'https%3A%2F%2Fgiuseart.com%2Fdemo%2Fmobileshop' 
+Change10:	'https%3A%2F%2Flocalhost%2Fnhutkhang%2Fwebbandienthoai' 
+Search11:	'//giuseart.com/demo/mobileshop' 
+Change11:	'//localhost/nhutkhang/webbandienthoai' 
+Search12:	'\/\/giuseart.com\/demo\/mobileshop' 
+Change12:	'\/\/localhost\/nhutkhang\/webbandienthoai' 
+Search13:	'%2F%2Fgiuseart.com%2Fdemo%2Fmobileshop' 
+Change13:	'%2F%2Flocalhost%2Fnhutkhang%2Fwebbandienthoai' 
+SCANNED:	Tables:14 	|	 Rows:4704 	|	 Cells:23965 
+UPDATED:	Tables:1 	|	 Rows:190 	|	 Cells:190 
+ERRORS:		0 
+RUNTIME:	0.452500 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+NOTICE: The wp-config.php has the following values set [WP_SITEURL, WP_HOME]. 
+Please validate these values are correct in your wp-config.php file.  See the codex link for more details: https://codex.wordpress.org/Editing_wp-config.php
+
+STEP 3 COMPLETE @ 05:40:15 - RUNTIME: 0.4714 sec.
+
+
